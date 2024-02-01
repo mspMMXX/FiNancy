@@ -15,6 +15,7 @@ class Transaction {
     var debitDate: Date
     var standingOrder: Bool
     
+    //MARK: - Init
     init(title: String, description: String? = nil, amount: Int, debitDate: Date, standingOrder: Bool) {
         self.title = title
         self.amount = amount
