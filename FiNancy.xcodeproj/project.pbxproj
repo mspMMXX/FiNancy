@@ -14,6 +14,9 @@
 		728E85882B6B8B0200FAC29A /* FiNancyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728E85872B6B8B0200FAC29A /* FiNancyTests.swift */; };
 		728E85922B6B8B0200FAC29A /* FiNancyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728E85912B6B8B0200FAC29A /* FiNancyUITests.swift */; };
 		728E85942B6B8B0200FAC29A /* FiNancyUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728E85932B6B8B0200FAC29A /* FiNancyUITestsLaunchTests.swift */; };
+		728E85A12B6B8B5D00FAC29A /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728E85A02B6B8B5D00FAC29A /* Transaction.swift */; };
+		728E85A32B6B8D2800FAC29A /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728E85A22B6B8D2800FAC29A /* Account.swift */; };
+		728E85A92B6BAA9800FAC29A /* TransactionViewElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728E85A82B6BAA9800FAC29A /* TransactionViewElement.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +47,9 @@
 		728E858D2B6B8B0200FAC29A /* FiNancyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FiNancyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		728E85912B6B8B0200FAC29A /* FiNancyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiNancyUITests.swift; sourceTree = "<group>"; };
 		728E85932B6B8B0200FAC29A /* FiNancyUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiNancyUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		728E85A02B6B8B5D00FAC29A /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
+		728E85A22B6B8D2800FAC29A /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
+		728E85A82B6BAA9800FAC29A /* TransactionViewElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewElement.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +101,10 @@
 			isa = PBXGroup;
 			children = (
 				728E85762B6B8B0000FAC29A /* FiNancyApp.swift */,
-				728E85782B6B8B0000FAC29A /* ContentView.swift */,
+				728E85A52B6B9B6A00FAC29A /* View */,
+				728E85A42B6B9B5700FAC29A /* Model */,
+				728E85A72B6B9B9100FAC29A /* Controller */,
+				728E85A62B6B9B7A00FAC29A /* ViewElements */,
 				728E857A2B6B8B0200FAC29A /* Assets.xcassets */,
 				728E857C2B6B8B0200FAC29A /* Preview Content */,
 			);
@@ -125,6 +134,38 @@
 				728E85932B6B8B0200FAC29A /* FiNancyUITestsLaunchTests.swift */,
 			);
 			path = FiNancyUITests;
+			sourceTree = "<group>";
+		};
+		728E85A42B6B9B5700FAC29A /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				728E85A22B6B8D2800FAC29A /* Account.swift */,
+				728E85A02B6B8B5D00FAC29A /* Transaction.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		728E85A52B6B9B6A00FAC29A /* View */ = {
+			isa = PBXGroup;
+			children = (
+				728E85782B6B8B0000FAC29A /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		728E85A62B6B9B7A00FAC29A /* ViewElements */ = {
+			isa = PBXGroup;
+			children = (
+				728E85A82B6BAA9800FAC29A /* TransactionViewElement.swift */,
+			);
+			path = ViewElements;
+			sourceTree = "<group>";
+		};
+		728E85A72B6B9B9100FAC29A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +299,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				728E85792B6B8B0000FAC29A /* ContentView.swift in Sources */,
+				728E85A32B6B8D2800FAC29A /* Account.swift in Sources */,
 				728E85772B6B8B0000FAC29A /* FiNancyApp.swift in Sources */,
+				728E85A92B6BAA9800FAC29A /* TransactionViewElement.swift in Sources */,
+				728E85A12B6B8B5D00FAC29A /* Transaction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
